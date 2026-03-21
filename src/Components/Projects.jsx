@@ -16,7 +16,7 @@ const Projects = () => {
             </div>
 
             <div className="project-card">
-            <img src="#" alt="" />
+            <img src="chatbot.png" alt="" />
             <h2>SIASC Buddy - Chatbot</h2>
             <h3>Front-End Developer</h3>
             <p>Description</p>

@@ -27,7 +27,7 @@
 /* typography*/
 .heroContent h1 {
   font-size: clamp(2rem,4rem,4.5rem);
-  font-weight: 700;
+  font-weight: 700; font-family: Poppins;
   line-height: 1.2;
 }
 
@@ -43,6 +43,7 @@
   font-size: 20px;
 }
 .heroContent .p2 { font-size: 30px; }
+.heroContent span {font-weight: bold; color: #eab308;}
 
 @media (max-width: 768px) {
   .hero {

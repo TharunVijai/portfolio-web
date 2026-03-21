@@ -1,0 +1,45 @@
+.sidecard {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;            
+}
+
+.contentcard {
+  display: flex; flex: 2;
+  flex-direction: column;
+  justify-content: flex-start;   /* start from top */
+  align-items: flex-start;       /* align left */
+  padding: 10px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;  
+    height: 100vh;      
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    height: auto; 
+  }
+}
+
+.sidecard h1
+{
+    font-family: Poppins; color: #eab308; font-size: clamp(2rem,3rem,3rem);
+}
+
+.contentcard h3
+{
+    color: #eab308;
+    margin-bottom: 8px; font-family: poppins;
+}
+.contentcard p
+{
+    color: #d1d5db; font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.contentcard div { margin-bottom: 30px;}
