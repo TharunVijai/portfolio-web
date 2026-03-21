@@ -1,0 +1,32 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root theme variables */
+:root {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+  --accent: #00ffcc;
+  --font: system-ui, -apple-system, sans-serif;
+}
+
+/* Full page setup */
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Root container should take full width */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Optional: smooth scrolling for navbar links */
+html {
+  scroll-behavior: smooth;
+}

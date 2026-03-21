@@ -1,0 +1,80 @@
+/* NAVBAR BASE */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background: #0f0f11;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1000;
+}
+
+/* INNER CONTAINER */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+
+  padding: 15px 20px;
+}
+
+/* LINKS */
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #e4e4e7;
+  font-size: 20px;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+/* HOVER COLOR */
+nav a:hover {
+  color: #eab308;
+}
+
+/* UNDERLINE ANIMATION */
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0%;
+  height: 2px;
+  background: #eab308;
+
+  transition: width 0.3s ease;
+}
+
+/* ON HOVER */
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE LINK (optional for later) */
+nav a.active {
+  color: #eab308;
+}
+
+nav a.active::after {
+  width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
