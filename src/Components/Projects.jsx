@@ -1,15 +1,32 @@
-
+import './Projects.css'
 const Projects = () => {
   return (
     <>
-        <div className='hero' id="projects">
-            <div className='heroContent'>
-                <h1>Projects</h1>
+        
+        <section className="projects" id="projects">
+          <h1 className='p-title'>PROJECTS</h1>
+          <div className='projects-container'>
+
+            <div className="project-card">
+            <img src="expensetracker.png" alt="" />
+            <h2>Expense Tracker</h2>
+            <h3>HTML, CSS, Java, SpringBoot, MySQL</h3>
+            <p>Description</p>
+            <a href="#" className='button-common'>Link</a>
             </div>
-            <div className='heroPhoto'>
-              <h1>Projects</h1>
-            </div>
-        </div>
+
+            <div className="project-card">
+            <img src="#" alt="" />
+            <h2>SIASC Buddy - Chatbot</h2>
+            <h3>Front-End Developer</h3>
+            <p>Description</p>
+            <a href="#" className='button-common'>Link</a>
+            </div> 
+
+          </div>
+          
+
+        </section>
     </>
   )
 }

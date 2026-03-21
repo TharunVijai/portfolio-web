@@ -20,7 +20,7 @@ main {
 .button-common
 {
   border: solid #eab308 2px;
-  border-radius: 3px; padding: 10px;
+  border-radius: 3px; padding: 10px; min-width: 5rem;
   display: inline-block; margin-top: 5px; margin-bottom: 5px;
   font-family: 'Poppins', sans-serif;   font-weight: bold;
   text-decoration: none;
@@ -35,4 +35,11 @@ main {
 {
   background-color: #d4af37;
   color: black;
+}
+
+.title
+{
+  font-size: clamp(1.5rem,2rem,3rem);
+  color: #eab308;  /* gold*/
+  margin-top: 10px;
 }
