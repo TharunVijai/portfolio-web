@@ -26,14 +26,14 @@
 
 /* typography*/
 .heroContent h1 {
-  font-size: 4.5rem;
+  font-size: clamp(2rem,4rem,4.5rem);
   font-weight: 700;
   line-height: 1.2;
 }
 
 .heroContent h2 {
   font-size: 3rem;
-  color: #eab308; 
+  color: #eab308;  /* gold*/
   margin-top: 10px;
 }
 
@@ -53,5 +53,11 @@
   .heroContent,
   .heroPhoto {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    text-align: center;
   }
 }
