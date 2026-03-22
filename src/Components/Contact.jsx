@@ -2,7 +2,7 @@ import './Contact.css'
 
 const Contact = () => {
   return (
-    <div className="contact-section">
+    <div className="contact-section" id='contact'>
 
         {/* LEFT TITLE */}
         <div className="contact-left">
@@ -11,29 +11,10 @@ const Contact = () => {
 
         {/* RIGHT CONTENT */}
         <div className="contact-right">
-
-            <div className="contact-item">
-            <span>📧</span>
-            <p>tharunrust@gmail.com</p>
-            </div>
-
-            <div className="contact-item">
-            <span>📞</span>
-            <p>8754246207</p>
-            </div>
-
-            <div className="contact-item">
-            <span>📍</span>
-            <p>Chennai, India</p>
-            </div>
-
-            <div className="contact-item">
-            <span>🔗</span>
-            <a href="https://www.linkedin.com/in/tharunvijay011" target="_blank">
-                LinkedIn Profile
-            </a>
-            </div>
-
+            <h2>Email</h2>
+            <h2>Mobile</h2>
+            <h2>Location</h2>
+            <h2>Linkedin</h2>
         </div>
 
         </div>

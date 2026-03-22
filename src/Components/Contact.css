@@ -32,29 +32,14 @@
   flex: 2;
   display: flex;
   flex-direction: column; justify-content: center; align-items: center;
-  gap: 18px; 
+  gap: 18px; padding: 40px;
 }
 
-
-/* CONTACT ITEM */
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  font-size: 16px;
-  color: #ddd;
+h2
+{
+    font-family: Poppins;
+    font-size: clamp(1rem,2rem,2rem);
 }
-
-
-/* ICON */
-
-.contact-item span {
-  font-size: 18px;
-}
-
-
 /* LINKS */
 
 .contact-item a {
