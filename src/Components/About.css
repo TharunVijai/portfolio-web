@@ -21,7 +21,7 @@
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    height: auto; 
+    min-height: auto; 
   }
 }
 
@@ -90,5 +90,6 @@
     justify-content: flex-start;
     font-size: 12px; font-weight: 500;
   }
+  
 
 }
