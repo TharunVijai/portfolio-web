@@ -43,3 +43,49 @@
 }
 
 .contentcard div { margin-bottom: 30px;}
+
+/* group spacing */
+.skill-group {
+  margin-bottom: 20px;
+}
+
+/* category title */
+.skill-group h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* container */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* individual tag */
+.skills span {
+  padding: 6px 12px;
+  border: 1px solid #eab308;
+  border-radius: 20px;
+  font-size: 16px; font-weight: 500;
+  color: #eab308;
+
+  transition: 0.3s ease;
+}
+
+.skills span:hover {
+  background: #eab308;
+  color: black;
+  box-shadow: 0 0 10px #eab308;
+}
+
+@media (max-width: 768px) {
+  .skills span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .skills  {
+    gap: 8px; justify-content: center;
+  }
+
+}

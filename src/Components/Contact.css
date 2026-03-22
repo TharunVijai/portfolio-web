@@ -1,0 +1,91 @@
+/* ===== CONTACT SECTION (CLEAN) ===== */
+
+.contact-section {
+  display: flex;
+  gap: 60px;
+  margin-top: 60px; 
+  padding: 0 40px;
+  min-height: 80vh;              
+  align-items: center; 
+}
+
+
+/* LEFT SIDE TITLE */
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.contact-left h1 {
+  font-size: clamp(2rem,3rem,3rem); font-family: Poppins;
+  font-weight: 700;
+  color: #eab308;
+}
+
+
+/* RIGHT SIDE CONTENT */
+
+.contact-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+/* CONTACT ITEM */
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 16px;
+  color: #ddd;
+}
+
+
+/* ICON */
+
+.contact-item span {
+  font-size: 18px;
+}
+
+
+/* LINKS */
+
+.contact-item a {
+  color: #eab308;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .contact-left h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contact-right {
+    gap: 14px;
+  }
+
+  .contact-item {
+    font-size: 14px;
+  }
+}

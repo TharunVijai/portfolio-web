@@ -22,9 +22,34 @@ const About = () => {
             </div>
             <div>
               <h3>Skills</h3>
-              <h4>Front-End : <span>HTML • CSS • JavaScript • React.js </span> </h4> 
-              <h4>Back-End : </h4> Java • SpringBoot • Servlets • OOPS
-              <h4>Database : </h4> <p>MySQL</p>
+                <div className="skill-group">
+                  <h4>Front-End</h4>
+                  <div className="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                  </div>
+                </div>
+
+                <div className="skill-group">
+                  <h4>Back-End</h4>
+                  <div className="skills">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Servlets</span>
+                    <span>OOPS</span>
+                    <span>C++</span>
+                    <span>Python</span>
+                  </div>
+                </div>
+
+                <div className="skill-group">
+                  <h4>Database</h4>
+                  <div className="skills">
+                    <span>MySQL</span>
+                  </div>
+                </div>
             </div>
           </div>
 
