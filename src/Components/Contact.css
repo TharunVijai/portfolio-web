@@ -31,8 +31,10 @@
 .contact-right {
   flex: 2;
   display: flex;
-  flex-direction: column; justify-content: center; align-items: center;
-  gap: 18px; padding: 40px;
+  flex-direction: column; justify-content: flex-start; align-items: flex-start;
+  gap: 26px; padding: 40px;
+  font-family: Poppins;   font-weight: 800;
+  font-size: clamp(16px, 2vw, 20px);
 }
 
 h2
@@ -40,38 +42,66 @@ h2
     font-family: Poppins;
     font-size: clamp(1rem,2rem,2rem);
 }
-/* LINKS */
 
-.contact-item a {
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  padding: 20px; gap: 16px;
+  color: #ddd;  
+  transition: 0.2s ease;
+}
+
+.contact-row:hover {
+  transform: translateX(4px); font-size: 24px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px; 
+  fill: #eab308;
+}
+
+.link {
   color: #eab308;
   text-decoration: none;
 }
 
-.contact-item a:hover {
-  text-decoration: underline;
+.link:hover {
+  text-decoration:underline;
+  font-size: 24px;
 }
 
 
 /* ===== MOBILE ===== */
 
 @media (max-width: 768px) {
+
   .contact-section {
     flex-direction: column;
+    padding: 0 20px;
     gap: 20px;
-    padding: 0 16px;
-    min-height: auto; margin-top: 40px;
   }
 
-  .contact-left h2 {
+  .contact-left h1 {
     font-size: 28px;
     text-align: center;
   }
 
   .contact-right {
-    gap: 14px;
+    padding: 0;
+    gap: 24px;
   }
 
-  .contact-item {
-    font-size: 14px;
+  .contact-row {
+    font-size: 15px;
+    gap: 14px;
+  }
+  .link:hover { font-size: 18px; }
+  .contact-row:hover { font-size: 18px; }
+
+  .icon {
+    width: 18px;
+    height: 18px;
   }
 }

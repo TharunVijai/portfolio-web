@@ -22,7 +22,7 @@ main {
   border: solid #eab308 2px;
   border-radius: 3px; padding: 10px; min-width: 5rem;
   display: inline-block; margin-top: 5px; margin-bottom: 5px;
-  font-family: 'Poppins', sans-serif;   font-weight: bold;
+  font-family: 'Poppins', sans-serif;   font-weight: bold; 
   text-decoration: none;
   color: #d4af37;
 }

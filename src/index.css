@@ -20,7 +20,7 @@ body {
   background: linear-gradient(
     to bottom,
     #0f0f0f,
-    #292929
+    #1e1e1e
   );
   color: var(--text);
 }

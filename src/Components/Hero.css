@@ -16,7 +16,7 @@
 .heroPhoto {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; border: solid 1px #a1a1aa; height: 250px;
 }
 
 .heroContent,
