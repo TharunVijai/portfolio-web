@@ -43,3 +43,28 @@ main {
   color: #eab308;  /* gold*/
   margin-top: 10px;
 }
+
+/*Glass effect*/
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    0 0 20px rgba(234, 179, 8, 0.15);
+}
+
+body {
+  line-height: 1.6;
+}

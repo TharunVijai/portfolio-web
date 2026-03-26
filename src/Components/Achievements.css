@@ -7,6 +7,7 @@
   justify-content: center;        /* vertical center */
   align-items: center;
   scroll-margin-top: 80px;        /* for navbar offset */
+  overflow: visible;
 }
 
 /* ===== TITLE ===== */
@@ -30,7 +31,7 @@
 .ach-container {
   display: flex;
   gap: 20px;
-
+  padding: 20px 10px; /* 👈 gives space for hover glow */
   overflow-x: auto;
   scroll-behavior: smooth;
 

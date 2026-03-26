@@ -1,5 +1,6 @@
 import './Contact.css'
 import emailjs from 'emailjs-com'
+import '../App.css'
 
 const Contact = () => {
 
@@ -69,7 +70,7 @@ const Contact = () => {
         </div>
 
         {/* RIGHT SIDE FORM */}
-        <form className="contact-right" onSubmit={sendEmail}>
+        <form className="contact-right glass" onSubmit={sendEmail}>
 
           <h3>Quick Message</h3>
 

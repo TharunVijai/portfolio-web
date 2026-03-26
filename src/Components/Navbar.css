@@ -1,4 +1,4 @@
-/* NAVBAR BASE */
+/* ===== NAVBAR BASE ===== */
 nav {
   position: fixed;
   top: 0;
@@ -6,41 +6,65 @@ nav {
   width: 100%;
 
   background: #0f0f11;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(226, 226, 226, 0.491);
   z-index: 1000;
 }
 
-
-/* INNER CONTAINER */
+/* ===== INNER CONTAINER ===== */
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;   /* 🔥 key change */
   align-items: center;
-  gap: 25px;
 
   padding: 15px 20px;
 }
 
+/* ===== LEFT: NAME ===== */
+.nav-name {
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #eab308;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.nav-name a {
+  text-decoration: none;
+  color: #eab308;
+}
+
+/* subtle hover */
+.nav-name:hover {
+  text-shadow: 0 0 10px rgba(234, 179, 8, 0.6);
+}
+
+/* ===== RIGHT: LINKS ===== */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
 /* LINKS */
-nav a {
+.nav-links a {
   position: relative;
   text-decoration: none;
   color: #e4e4e7;
-  font-size: 25px;
+  font-size: 25px;   /* 🔥 adjusted (25px was too big) */
   padding-bottom: 4px;
   transition: color 0.3s ease;
 }
 
 /* HOVER COLOR */
-nav a:hover {
+.nav-links a:hover {
   color: #eab308;
 }
 
 /* UNDERLINE ANIMATION */
-nav a::after {
+.nav-links a::after {
   content: '';
   position: absolute;
   left: 0;
@@ -54,33 +78,39 @@ nav a::after {
 }
 
 /* ON HOVER */
-nav a:hover::after {
+.nav-links a:hover::after {
   width: 100%;
 }
 
-/* ACTIVE LINK (optional for later) */
-nav a.active {
+/* ACTIVE LINK */
+.nav-links a.active {
   color: #eab308;
 }
 
-nav a.active::after {
+.nav-links a.active::after {
   width: 100%;
 }
 
-/* MOBILE */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
+
   .nav-container {
-    justify-content: center;
+    justify-content: center;   /* center everything */
     flex-wrap: wrap;
     gap: 12px;
   }
 
-  nav a {
-    font-size: 16px;
+  .nav-name {
+    display: none;   /* 🔥 hide name */
   }
 
-  .nav-name
-{
-  display: none;
-}
+  .nav-links {
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
 }

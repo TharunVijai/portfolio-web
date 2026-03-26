@@ -1,10 +1,11 @@
 import './About.css'
+
 const About = () => {
   return (
     <>
         <section className='about-container' id='about'>
 
-          <div className='sidecard'>
+          <div className='sidecard '>
             <h1>About Me</h1>
           </div>
 
