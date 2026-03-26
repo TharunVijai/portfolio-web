@@ -1,107 +1,170 @@
-/* ===== CONTACT SECTION (CLEAN) ===== */
-
+/* ===== SECTION ===== */
 .contact-section {
-  display: flex;
-  gap: 60px;
-  margin-top: 20px; 
-  padding: 0 40px;
-  min-height: 70vh;              
-  align-items: center; 
+  padding: 80px 20px;
 }
 
-
-/* LEFT SIDE TITLE */
-
-.contact-left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+/* desktop full screen */
+@media (min-width: 769px) {
+  .contact-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.contact-left h1 {
-  font-size: clamp(2rem,3rem,3rem); font-family: Poppins;
-  font-weight: 700;
+/* ===== TITLE ===== */
+.contact-title {
+  text-align: center;
+  font-size: clamp(3rem, 4vw, 4rem);
   color: #eab308;
+  font-family: Poppins;
+  margin-bottom: 60px;
 }
 
-
-/* RIGHT SIDE CONTENT */
-
-.contact-right {
-  flex: 2;
+/* ===== CONTAINER ===== */
+.contact-container {
   display: flex;
-  flex-direction: column; justify-content: flex-start; align-items: flex-start;
-  gap: 26px; padding: 40px;
-  font-family: Poppins;   font-weight: 800;
-  font-size: clamp(16px, 2vw, 20px);
+  justify-content: space-between;   /* spread both sides */
+  align-items: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
 }
 
-h2
-{
-    font-family: Poppins;
-    font-size: clamp(1rem,2rem,2rem);
+/* ===== LEFT ===== */
+.contact-left {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-
 
 .contact-row {
   display: flex;
   align-items: center;
-  padding: 20px; gap: 16px;
-  color: #ddd;  
-  transition: 0.2s ease;
+  gap: 16px;
+  font-size: 1.4rem;
+  color: #ddd;
+  transition: 0.2s;
 }
 
 .contact-row:hover {
-  transform: translateX(4px); font-size: 24px;
+  transform: translateX(6px);
 }
 
 .icon {
-  width: 22px;
-  height: 22px; 
+  width: 28px;
+  height: 28px;
   fill: #eab308;
 }
 
 .link {
-  color: #eab308;
+  color: #eab308; font-size: 1.5rem;
   text-decoration: none;
 }
 
 .link:hover {
-  text-decoration:underline;
-  font-size: 24px;
+  text-decoration: underline;
 }
 
+/* ===== RIGHT (FORM) ===== */
+.contact-right {
+  flex: 1;
+  width: 100%;              /* take full available space */
+  max-width: 800px;         /* 🔥 increase this for width */
+  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 30px;
+  margin-left: auto;        /* push it slightly right */
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(234, 179, 8, 0.2);
+  border-radius: 12px;
+}
+
+.contact-right h3 {
+  color: #eab308;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* inputs */
+.contact-right input,
+.contact-right textarea {
+  background: transparent;
+  border: 1px solid #8e7100;
+  padding: 14px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-right textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+/* focus */
+.contact-right input:focus,
+.contact-right textarea:focus {
+  border: 1px solid #facc15;
+  box-shadow: 0 0 12px rgba(234, 179, 8, 0.2);
+}
+
+/* button */
+.contact-right button {
+  border: 1px solid #eab308;
+  color: #eab308;
+  background: transparent;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  background: #eab308;
+  color: black;
+}
 
 /* ===== MOBILE ===== */
-
 @media (max-width: 768px) {
 
   .contact-section {
-    flex-direction: column;
-    padding: 0 20px;
-    gap: 20px;
+    min-height: auto;
+    padding: 50px 15px;
   }
 
-  .contact-left h1 {
-    font-size: 28px;
-    text-align: center;
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
   }
 
   .contact-right {
-    padding: 0;
-    gap: 24px;
+    padding: 20px;
   }
 
   .contact-row {
-    font-size: 15px;
-    gap: 14px;
+    font-size: 1rem;
   }
-  .link:hover { font-size: 18px; }
-  .contact-row:hover { font-size: 18px; }
+}
 
-  .icon {
-    width: 18px;
-    height: 18px;
-  }
+.contact-right input,
+.contact-right textarea,
+.contact-right button {
+  width: 100%; display: block;
 }
