@@ -39,7 +39,7 @@ main {
 
 .title
 {
-  font-size: clamp(1.5rem,2rem,3rem);
+  font-size: clamp(1.5rem,2rem,3rem); font-family: Poppins;
   color: #eab308;  /* gold*/
   margin-top: 10px;
 }

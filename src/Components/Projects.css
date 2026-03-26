@@ -1,73 +1,138 @@
+/* ===== PROJECTS SECTION ===== */
+
 .projects {
   padding: 80px 20px;
   text-align: center;
-  display: flex; flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 30px; align-items: stretch;
 
   width: 100%;
   max-width: 1000px;
   margin-top: 40px;
 }
 
-/* title */
-.p-title
-{
-  font-size: clamp(2.5rem,3rem,3.5rem);
-  color: #eab308;   font-family: Poppins;
-  text-align: center;  display: block;
+/* ===== TITLE ===== */
+
+.p-title {
+  font-size: clamp(2.5rem, 3rem, 3.5rem);
+  color: #eab308;
+  font-family: Poppins;
+  text-align: center;
+  display: block;
 }
 
 .projects h2 {
-  font-size: clamp(1rem,2rem,2rem);
+  font-size: clamp(1rem, 2rem, 2rem);
   margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
-/* card */
+/* ===== CARD ===== */
+
 .project-card {
   max-width: 400px;
-  margin: 0 auto; 
+  min-height: 420px;   /* 🔥 use min-height instead of height */
+  margin: 0 auto; height: 100%;
+
   border: 1px solid #8e7100;
-  padding: 20px; padding-top: 0px;
+  padding: 20px;
+  padding-top: 0px;
   border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+
   transition: all 0.3s ease;
 }
-
-.project-card:hover
-{
+.project-card:hover {
   border: solid #facc15 1px;
   transform: translateY(-5px);
   box-shadow: 0 0 35px rgba(234, 179, 8, 0.2);
 }
 
-/* image */
+/* ===== IMAGE ===== */
+
 .project-card img {
-  width: 100%;  padding: 10px;
+  width: 100%;
+  padding: 10px;
   border-radius: 10px;
-  margin-bottom: 10px; margin-top: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
-/* title */
+/* ===== TITLE TEXT ===== */
+
 .project-card h3 {
   margin-bottom: 10px;
 }
 
-/* description */
-.project-card p {
-  color: #9ca3af;
+/* ===== TECH STACK ===== */
+
+.project-card h4 {
   margin-bottom: 10px;
+  font-size: 14px;
+  color: #ddd;
 }
 
-/* link */
+/* ===== DESCRIPTION (SCROLL FIX) ===== */
+
+.desc {
+  flex-grow: 1;          /* fills available space */
+  overflow-y: auto;
+}
+
+/* description text */
+.desc p {
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* scrollbar styling */
+.desc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.desc::-webkit-scrollbar-thumb {
+  background: #eab308;
+  border-radius: 10px;
+}
+
+/* ===== LINK BUTTON ===== */
+
 .project-card a {
   text-decoration: none;
   color: #eab308;
+
+  margin-top: 20px;     /* 🔥 pushes to bottom */
+  align-self: center;   /* 🔥 center align */
 }
 
 .project-card a:hover {
   color: #facc15;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .projects-container {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  .project-card {
+    height: auto; /* remove fixed height */
+  }
+
+  .desc {
+    max-height: none;   /* no scroll */
+    overflow: visible;
+  }
+
 }

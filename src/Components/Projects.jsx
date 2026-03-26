@@ -11,7 +11,7 @@ const Projects = () => {
             <img src="expensetracker.png" alt="" />
             <h2>Expense Tracker</h2>
             <h3>HTML, CSS, Java, SpringBoot, MySQL</h3>
-            <p>Description</p>
+            <div className='desc'><p>Description</p></div>
             <a href="#" className='button-common'>Link</a>
             </div>
 
@@ -19,7 +19,7 @@ const Projects = () => {
             <img src="chatbot.png" alt="" />
             <h2>SIASC Buddy - Chatbot</h2>
             <h3>Front-End Developer</h3>
-            <p>Description</p>
+            <div className='desc'><p>Description</p></div>
             <a href="#" className='button-common'>Link</a>
             </div> 
 
