@@ -115,19 +115,23 @@
 @media (max-width: 768px) {
 
   #achievements {
-    padding: 60px 15px;
+    min-height: auto;        /* ❌ remove full screen */
+    padding: 40px 15px;      /* 🔥 reduce top/bottom space */
+    justify-content: flex-start;
   }
-
   .ach-title {
-    font-size: 2rem;
+    font-size: 2rem; margin-bottom: 20px;
   }
 
   .ach-card {
     flex: 0 0 80%;     /* 🔥 1 card + preview */
-    max-width: 80%;
+    max-width: 80%; padding: 12px;
   }
 
   .ach-card img {
     height: 120px;
+  }
+  .ach-container {
+    gap: 15px; -webkit-overflow-scrolling: touch;
   }
 }
