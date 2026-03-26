@@ -28,7 +28,15 @@
 .heroContent h1 {
   font-size: clamp(2rem,4rem,4.5rem);
   font-weight: 700; font-family: Poppins;
-  line-height: 1.2;
+  line-height: 1.2; transition: all 0.3s ease;
+}
+.heroContent h1:hover
+{
+  transform: translateY(-5px);
+  text-shadow: 
+    0 0 10px rgba(212, 175, 55, 0.6),
+    0 0 20px rgba(212, 175, 55, 0.4),
+    0 0 40px rgba(212, 175, 55, 0.2);
 }
 
 .heroContent h2 {
