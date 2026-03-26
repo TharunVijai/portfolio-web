@@ -8,23 +8,28 @@ const Achievements = () => {
         <div className='ach-wrapper'>
             <div className='ach-container' >
             <div className='ach-card'>
-                <img src="#" alt="" />
-                <h3 className='title'>Title</h3>
+                <img src="/sla.jpeg" alt="" />
+                <h3 className='title'>Java Full Stack Course</h3>
                 <a href="#" className='button-common'>View</a>
             </div>
             <div className='ach-card'>
-                <img src="#" alt="" />
-                <h3 className='title'>Title</h3>
+                <img src="/IBM.jpeg" alt="" />
+                <h3 className='title'>JavaScript IBM Certificate</h3>
                 <a href="#" className='button-common'>View</a>
             </div>
             <div className='ach-card'>
-                <img src="#" alt="" />
-                <h3 className='title'>Title</h3>
+                <img src="/udemy.jpeg" alt="" />
+                <h3 className='title'>React - Udemy course</h3>
                 <a href="#" className='button-common'>View</a>
             </div>
             <div className='ach-card'>
-                <img src="#" alt="" />
-                <h3 className='title'>Title</h3>
+                <img src="/coa.jpeg" alt="" />
+                <h3 className='title'>Computer on Office Automation</h3>
+                <a href="#" className='button-common'>View</a>
+            </div>
+            <div className='ach-card'>
+                <img src="/typewriting.jpeg" alt="" />
+                <h3 className='title'>English Senior Typewriting</h3>
                 <a href="#" className='button-common'>View</a>
             </div>
         </div>
