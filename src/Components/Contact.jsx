@@ -1,13 +1,33 @@
 import './Contact.css'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
-  return (
-    <div className="contact-section" id="contact">
 
-      {/* TOP TITLE */}
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_emailtharun',
+      'template_ak0i3jf',
+      e.target,
+      'zne72VTSa0oFz3AmS'
+    ).then(
+      () => {
+        alert("Message Sent ✅");
+      },
+      () => {
+        alert("Failed ❌");
+      }
+    );
+
+    e.target.reset();
+  };
+
+  return (
+    <section className="contact-section" id="contact">
+
       <h1 className="contact-title">Contact</h1>
 
-      {/* MAIN CONTAINER */}
       <div className="contact-container">
 
         {/* LEFT SIDE */}
@@ -34,9 +54,10 @@ const Contact = () => {
             Chennai, India
           </p>
 
-          <a
+          <a 
             href="https://www.linkedin.com/in/tharunvijay011"
             target="_blank"
+            rel="noreferrer"
             className="contact-row link"
           >
             <svg className="icon" viewBox="0 0 24 24">
@@ -47,21 +68,37 @@ const Contact = () => {
 
         </div>
 
-        {/* RIGHT SIDE (FORM) */}
-        <div className="contact-right">
+        {/* RIGHT SIDE FORM */}
+        <form className="contact-right" onSubmit={sendEmail}>
 
           <h3>Quick Message</h3>
 
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message"></textarea>
+          <input 
+            type="text" 
+            name="user_name" 
+            placeholder="Your Name" 
+            required 
+          />
 
-          <button>Send</button>
+          <input 
+            type="email" 
+            name="user_email" 
+            placeholder="Your Email" 
+            required 
+          />
 
-        </div>
+          <textarea 
+            name="message" 
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">Send</button>
+
+        </form>
 
       </div>
-    </div>
+    </section>
   )
 }
 
