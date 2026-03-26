@@ -10,6 +10,7 @@ nav {
   z-index: 1000;
 }
 
+
 /* INNER CONTAINER */
 .nav-container {
   max-width: 1200px;
@@ -77,4 +78,9 @@ nav a.active::after {
   nav a {
     font-size: 16px;
   }
+
+  .nav-name
+{
+  display: none;
+}
 }
