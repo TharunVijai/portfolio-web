@@ -117,10 +117,10 @@
   #achievements {
     min-height: auto;        /* ❌ remove full screen */
     padding: 40px 15px;      /* 🔥 reduce top/bottom space */
-    justify-content: flex-start;
+    display: block; padding: 30px 15px;
   }
   .ach-title {
-    font-size: 2rem; margin-bottom: 20px;
+    font-size: 2rem; margin-bottom: 20px; margin-top: 10px;
   }
 
   .ach-card {
