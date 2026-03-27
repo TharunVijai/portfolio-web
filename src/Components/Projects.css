@@ -126,7 +126,11 @@
 /* ===== MOBILE RESPONSIVE ===== */
 
 @media (max-width: 768px) {
-
+   
+  .projects
+  {
+    margin-top: 20px;
+  }
   .projects-container {
     grid-template-columns: 1fr; /* single column */
   }
