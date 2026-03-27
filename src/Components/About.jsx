@@ -26,10 +26,11 @@ const About = () => {
                 <div className="skill-group">
                   <h4>Front-End</h4>
                   <div className="skills">
+                    <span>React.js</span>
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>JavaScript</span>
-                    <span>React</span>
+                    
                   </div>
                 </div>
 
