@@ -53,6 +53,22 @@
 .heroContent .p2 { font-size: 30px; }
 .heroContent span {font-weight: bold; color: #eab308;}
 
+.button-hero
+{
+  border: solid #eab308 2px;
+  border-radius: 3px; padding: 10px; min-width: 5rem;
+  display: inline-block; margin-top: 5px; margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;   font-weight: bold; 
+  text-decoration: none;
+  background-color: #eab308;
+  color: black;
+}
+.button-hero:hover
+{
+  transform: translateX(5px);
+  box-shadow: 0 0 60px rgba(253, 194, 0, 0.811);
+}
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
