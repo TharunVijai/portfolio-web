@@ -68,3 +68,12 @@ main {
 body {
   line-height: 1.6;
 }
+
+@media (max-width: 768px) 
+{
+  .button-common
+  {
+    background-color: #d4af37;
+    color: black;
+  }
+}
