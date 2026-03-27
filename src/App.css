@@ -76,7 +76,7 @@ body {
   body {
   line-height: 1.6;
   width: 100%;
-  margin-left: none;
+  margin-left: 0;
 }
 
   .button-common
