@@ -137,5 +137,10 @@
     max-height: none;   /* no scroll */
     overflow: visible;
   }
+  .project-card a
+  {
+    background-color: #eab308;
+    color: black;
+  }
 
 }

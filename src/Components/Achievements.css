@@ -130,6 +130,10 @@ p{
     flex: 0 0 80%;     /* 🔥 1 card + preview */
     max-width: 80%; padding: 12px;
   }
+  .ach-card a{
+    background-color: #eab308;
+    color: black;
+  }
 
   .ach-card img {
     height: 120px;
