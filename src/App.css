@@ -73,6 +73,12 @@ body {
 
 @media (max-width: 768px) 
 {
+  body {
+  line-height: 1.6;
+  width: 100%;
+  margin-left: none;
+}
+
   .button-common
   {
     background-color: #d4af37;
