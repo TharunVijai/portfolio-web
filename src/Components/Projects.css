@@ -1,6 +1,7 @@
 /* ===== PROJECTS SECTION ===== */
 
 .projects {
+  margin-top: 200px;
   padding: 80px 20px;
   text-align: center;
   display: flex;
@@ -112,7 +113,7 @@
 .project-card a {
   text-decoration: none;
   color: #eab308;
-
+  display: none;
   margin-top: 20px;     /* 🔥 pushes to bottom */
   align-self: center;   /* 🔥 center align */
 }

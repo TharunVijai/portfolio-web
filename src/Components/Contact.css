@@ -1,6 +1,6 @@
 /* ===== SECTION ===== */
 .contact-section {
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 
 /* desktop full screen */
@@ -19,7 +19,7 @@
   font-size: clamp(3rem, 4vw, 4rem);
   color: #eab308;
   font-family: Poppins;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 /* ===== CONTAINER ===== */
