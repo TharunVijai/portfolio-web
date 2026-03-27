@@ -129,7 +129,7 @@
    
   .projects
   {
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .projects-container {
     grid-template-columns: 1fr; /* single column */
