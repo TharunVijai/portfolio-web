@@ -74,6 +74,9 @@
     flex-direction: column;
     text-align: center;
   }
+  .heroContent h1 {
+    font-size: 2.8rem;   
+  }
 
   .heroContent,
   .heroPhoto {
