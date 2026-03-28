@@ -13,7 +13,7 @@ const Hero = () => {
                 <a href="ResumeUpdated.pdf" target='' className='button-hero'> See Resume</a>
             </div>
             <div className='heroPhoto'>
-              <h1>photo</h1>
+              <img src="profile.jpeg" alt="" />
             </div>
         </div>
     </>
