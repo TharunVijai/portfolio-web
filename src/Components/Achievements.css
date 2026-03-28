@@ -128,7 +128,7 @@ p{
 
   .ach-card {
     flex: 0 0 85%;        /* 🔽 from 80% (better fit) */
-    max-width: 75%;
+    max-width: 85%;
     
     padding: 12px;
     gap: 6px;             /* 🔥 controls spacing inside */
@@ -147,12 +147,21 @@ p{
     margin-bottom: 6px;
   }
   .ach-container {
-    gap: 15px; -webkit-overflow-scrolling: touch; align-items: stretch; padding-bottom: 15px; 
+    gap: 15px; -webkit-overflow-scrolling: touch; 
+    align-items: stretch; padding-bottom: 15px; 
+    padding-left: 0;    /* remove extra center padding */
+    padding-right: 0;
+    scroll-padding-left: 15px;
   }
 
   .ach-card h3 {
     margin-bottom: 4px;
     font-size: 1rem;
+  }
+  .ach-wrapper {
+    width: 95%;        /* 🔥 full width */
+    padding-left: 15px; /* small left spacing */
+    padding-right: 0;   /* remove right waste */
   }
 
 }
