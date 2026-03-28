@@ -14,7 +14,7 @@
   gap: 30px; align-items: stretch;
   margin: 40px auto 0;
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   margin-top: 40px;
 }
 
@@ -38,12 +38,12 @@
 /* ===== CARD ===== */
 
 .project-card {
-  max-width: 400px;
-  min-height: 420px;   /* 🔥 use min-height instead of height */
-  margin: 0 auto; height: 100%;
+  max-width: 300px;
+  min-height: 380px;   /* 🔥 use min-height instead of height */
+  margin: 0 auto; height: auto;
 
   border: 1px solid #8e7100;
-  padding: 20px;
+  padding: 15px;
   padding-top: 0px;
   border-radius: 8px;
 
@@ -66,14 +66,14 @@
   border-radius: 10px;
   margin-bottom: 10px;
   margin-top: 5px;
-  height: 180px;    
+  height: 150px;    
   object-fit: cover;  
 }
 
 /* ===== TITLE TEXT ===== */
 
 .project-card h3 {
-  color: #eab308;
+  color: #eab308; font-size: 15px;
   margin-bottom: 10px;
 }
 
@@ -81,7 +81,7 @@
 
 .project-card h4 {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 12px;
   color: #ddd;
 }
 
