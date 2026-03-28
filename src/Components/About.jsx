@@ -23,7 +23,7 @@ const About = () => {
               <h4>High School</h4>
               <p>Mount Saint Joseph Matric Higher Sec School, Thiruvannamalai</p>
             </div>
-            <div>
+            {/* <div>
               <h3>Skills</h3>
                 <div className="skill-group">
                   <h4>Front-End</h4>
@@ -54,7 +54,7 @@ const About = () => {
                     <span>MySQL</span>
                   </div>
                 </div>
-            </div>
+            </div> */}
           </div>
 
         </section>

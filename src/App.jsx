@@ -8,6 +8,7 @@ import About from './Components/About'
 import Contact from './Components/Contact'
 import Achievements from './Components/Achievements'
 import useActiveSection from "./Components/useActiveSection";
+import Skills from './Components/Skills'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
       <Projects />
       <Achievements />
       <Contact />
