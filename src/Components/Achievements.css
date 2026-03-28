@@ -127,7 +127,7 @@ p{
   }
 
   .ach-card {
-    flex: 0 0 75%;        /* 🔽 from 80% (better fit) */
+    flex: 0 0 85%;        /* 🔽 from 80% (better fit) */
     max-width: 75%;
     
     padding: 12px;
