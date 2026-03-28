@@ -25,7 +25,7 @@ const Projects = () => {
             </div> 
 
             <div className="project-card">
-            <img src="chatbot.png" alt="" />
+            <img src="portfoliopage.png" alt="" />
             <h2>Portfolio - Web</h2>
             <h3>React (Vite) - HTML5 - CSS3 - JavaScript - EmailJS</h3>
             <div className='desc'><p>A personal portfolio website to showcase my projects, skills, and contact information with a clean UI.</p></div>

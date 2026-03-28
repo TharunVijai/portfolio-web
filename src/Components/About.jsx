@@ -18,6 +18,8 @@ const About = () => {
               <h3>Education</h3>
               <h4>B.Sc Computer Science</h4>
               <p>Shanmuga Industries Arts & Science College, Thiruvannamalai</p>
+              <h4>Java Full Stack Course</h4>
+              <p>Softlogic Systems, Chennai.</p>
               <h4>High School</h4>
               <p>Mount Saint Joseph Matric Higher Sec School, Thiruvannamalai</p>
             </div>
