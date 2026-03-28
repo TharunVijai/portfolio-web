@@ -127,18 +127,32 @@ p{
   }
 
   .ach-card {
-    flex: 0 0 80%;     /* 🔥 1 card + preview */
-    max-width: 80%; padding: 12px;
+    flex: 0 0 75%;        /* 🔽 from 80% (better fit) */
+    max-width: 75%;
+    
+    padding: 12px;
+    gap: 6px;             /* 🔥 controls spacing inside */
+    justify-content: flex-start; 
   }
   .ach-card a{
     background-color: #eab308;
-    color: black;
+    color: black; margin-top: 8px;   
+  }
+  .ach-card p {
+    margin-bottom: 5px;   /* 🔽 reduce gap before button */
   }
 
   .ach-card img {
-    height: 120px;
+    height: 110px;   /* 🔽 slightly smaller */
+    margin-bottom: 6px;
   }
   .ach-container {
-    gap: 15px; -webkit-overflow-scrolling: touch;
+    gap: 15px; -webkit-overflow-scrolling: touch; align-items: stretch; padding-bottom: 15px; 
   }
+
+  .ach-card h3 {
+    margin-bottom: 4px;
+    font-size: 1rem;
+  }
+
 }
