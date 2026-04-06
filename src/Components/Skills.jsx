@@ -16,6 +16,7 @@ const Skills = () => {
             <span className="skill-pill">HTML</span>
             <span className="skill-pill">CSS</span>
             <span className="skill-pill">JavaScript</span>
+            <span className="skill-pill">Bootstrap</span>
           </div>
         </div>
 

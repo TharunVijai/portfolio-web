@@ -9,9 +9,9 @@ const Projects = () => {
           <div className='projects-container'>
 
             <div className="project-card ">
-            <img src="expensetracker.png" alt="" />
+            <img src="expensetrackernew.png" alt="" />
             <h2>Expense Tracker</h2>
-            <h3>HTML - CSS - Java - SpringBoot - JS - MySQL</h3>
+            <h3>React (Vite) - HTML - CSS - Java - SpringBoot - JS - MySQL</h3>
             <div className='desc'><p>A web application to track daily expenses, manage budgets, and monitor spending efficiently.</p></div>
             <a href="#" className='button-common'>Link</a>
             </div>
