@@ -10,7 +10,7 @@ const Hero = () => {
                 <p className='p2'>Java Full Stack Developer</p><br />
                 <p>An aspiring <span> B.Sc CS graduate </span> with a strong foundation in Java (OOPS) and web technologies. 
                   Passionate about creating efficient, scalable solutions and continuously learning new technologies.”</p>
-                <a href="./Tharun Vijay S Resume 2026 April.pdf" target='' className='button-hero'> See Resume</a>
+                <a href="./RESUME_ATS.pdf" target='' className='button-hero'> See Resume</a>
             </div>
             <div className='heroPhoto'>
               <img src="profile.jpeg" alt="" />
